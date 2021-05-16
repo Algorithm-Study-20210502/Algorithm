@@ -32,5 +32,10 @@
 
 ### 조합론
 
+#### 참고
+
+- 순열 : https://yabmoons.tistory.com/100?category=838490
+- 조합 : https://yabmoons.tistory.com/99
+
 ### 투 포인터
 
