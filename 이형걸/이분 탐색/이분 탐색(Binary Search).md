@@ -254,13 +254,18 @@ int main() {
 
 using namespace std;
 
-// 벡터(vector) 
-vector<int>::iterator leftIndex = lower_bound(v.begin(), v.end(), leftValue);
+int main() {
 
-int leftIndex = lower_bound(v.begin(), v.end(), leftValue) - v.begin();
+    // 벡터(vector) 
+    vector<int>::iterator leftIndex = lower_bound(v.begin(), v.end(), leftValue);
 
-// 배열(array)
-int leftIndex = lower_bound(arr, arr + N, leftValue) - arr;
+    int leftIndex = lower_bound(v.begin(), v.end(), leftValue) - v.begin();
+
+    // 배열(array)
+    int leftIndex = lower_bound(arr, arr + N, leftValue) - arr;
+
+    return 0;
+}
 ```
 
 - `lower_bound의 반환형` 은 **Iterator** 이므로 실제로 몇 번째 인덱스인지 알고 싶다면, 위 코드와 같이 lower_bound 값에서 **배열 첫 번째 주소** 를 가리키는 **배열의 이름** 을 빼 주면 됩니다.
@@ -279,13 +284,18 @@ int leftIndex = lower_bound(arr, arr + N, leftValue) - arr;
 
 using namespace std;
 
-// 벡터(vector)
-vector<int>::iterator rightIndex = upper_bound(v.begin(), v.end(), rightValue);
+int main() {
 
-int rightIndex = upper_bound(v.begin(), v.end(), rightValue) - v.begin();
+    // 벡터(vector)
+    vector<int>::iterator rightIndex = upper_bound(v.begin(), v.end(), rightValue);
 
-// 배열(array)
-int rightIndex = upper_bound(arr, arr + N, rightValue) - arr;
+    int rightIndex = upper_bound(v.begin(), v.end(), rightValue) - v.begin();
+
+    // 배열(array)
+    int rightIndex = upper_bound(arr, arr + N, rightValue) - arr;
+
+    return 0;
+}
 ```
 
 ### EX) 정렬된 배열에서 특정 수의 개수 구하기
