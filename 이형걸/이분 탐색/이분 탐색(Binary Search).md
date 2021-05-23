@@ -249,7 +249,10 @@ int main() {
 - 사용 조건 : 탐색을 진행할 배열 혹은 벡터는 **오름차순 정렬** 되어 있어야 한다.
 
 ```c++
+#include <vector>
 #include <algorithm>
+
+using namespace std;
 
 // 벡터(vector) 
 vector<int>::iterator leftIndex = lower_bound(v.begin(), v.end(), leftValue);
@@ -271,7 +274,10 @@ int leftIndex = lower_bound(arr, arr + N, leftValue) - arr;
 - 사용 조건 : 탐색을 진행할 배열 혹은 벡터는 **오름차순 정렬** 되어 있어야 함
 
 ```c++
+#include <vector>
 #include <algorithm>
+
+using namespace std;
 
 // 벡터(vector)
 vector<int>::iterator rightIndex = upper_bound(v.begin(), v.end(), rightValue);
