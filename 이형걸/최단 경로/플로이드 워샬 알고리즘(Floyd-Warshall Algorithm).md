@@ -101,7 +101,11 @@ int main(void) {
 
 ## 활용
 
-- '모든 지점에서 다른 모든 지점까지의 최단 경로를 모두 구해야 하는 경우' 에 사용하는 알고리즘
+### '모든 지점에서 다른 모든 지점까지의 최단 경로를 모두 구해야 하는 경우' 에 사용하는 알고리즘
+
+### 모든 노드에서 다른 모든 노드의 연결 관계를 파악할 때 사용한다.
+
+### 
 
 - [(백준 골드 4) 11404번 플로이드](https://github.com/LeeHyungGeol/Algorithm_BaekJoon/blob/master/%EB%B0%B1%EC%A4%80_if%EB%AC%B8/%EC%B5%9C%EB%8B%A8%20%EA%B2%BD%EB%A1%9C_%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C(%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EC%9B%8C%EC%85%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)(%EB%85%B8%EB%93%9C%EC%9D%98%20%EA%B0%9C%EC%88%98%20500%EA%B0%9C%20%EC%9D%B4%ED%95%98).cpp)
 - [(백준 골드 4) 1956번 운동](https://github.com/LeeHyungGeol/Algorithm_BaekJoon/blob/master/%EB%B0%B1%EC%A4%80_if%EB%AC%B8/%EC%B5%9C%EB%8B%A8%20%EA%B2%BD%EB%A1%9C_%EC%9A%B4%EB%8F%99(%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EC%99%80%EC%83%AC%20%EC%9D%91%EC%9A%A9).cpp)
