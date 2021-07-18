@@ -1,6 +1,6 @@
-# DFS(Depth-Dirst-Search)
+# DFS(Depth-First-Search)
 
-`DFS(Depth-Dirst-Search)` : 깊이 우선 탐색, **그래프에서 깊은 부분을 우선적으로 탐색하는 알고리즘**
+`DFS(Depth-First-Search)` : 깊이 우선 탐색, **그래프에서 깊은 부분을 우선적으로 탐색하는 알고리즘**
 
 ## 특징
 
@@ -71,17 +71,17 @@ int main(void) {
 }
 
 // DFS 함수 정의
-void dfs(int x) {
+void dfs(int cur) {
 
     // 현재 노드를 방문 처리
-    visited[x] = true;
-
-    cout << x << ' ';
+    visited[cur] = true;
 
     // 현재 노드와 연결된 다른 노드를 재귀적으로 방문
-    for (int i = 0; i < graph[x].size(); i++) {
-        int y = graph[x][i];
-        if (!visited[y]) dfs(y);
+    for (int i = 0; i < graph[cur].size(); i++) {
+        int next = graph[cur][i];
+        if (!visited[next]) { 
+            dfs(next);
+        }
     }
 }
 ```
@@ -148,8 +148,12 @@ int main() {
 }
 ```
 
-**풀어보면 좋을 문제** : [백준 실버 2] 유기농 배추(1012번) : https://www.acmicpc.net/problem/1012
+**풀어보면 좋을 문제** : 
 
+[백준 실버 2] 유기농 배추(1012번) : https://www.acmicpc.net/problem/1012
+
+[프로그래머스 레벨 2] 카카오프렌즈 컬러링북 : https://programmers.co.kr/learn/courses/30/lessons/1829
+ 
 ### 그래프 싸이클 판별
 
 #### Undirected Graph
@@ -159,7 +163,7 @@ DFS를 이용하면 cycle detection을 쉽게 할 수 있다.
 
 - `Undirected Graph` 의 경우 **`union-find`** 를 이용하는 방법도 있다. 
 
-![undirected graph](https://user-images.githubusercontent.com/56071088/126054876-b0391fe6-f897-4f9d-aa04-6a1619348456.PNG)
+<img src="https://user-images.githubusercontent.com/56071088/126054876-b0391fe6-f897-4f9d-aa04-6a1619348456.PNG" height="400" width="300">
 
 ```c++
 vector<vector<int>> edges;
@@ -199,7 +203,7 @@ int main() {
 DFS를 이용하면 cycle detection을 쉽게 할 수 있다.
 - **`Directed Graph`** 에서는 **DFS 호출 stack 상에서 방문한 node를 다시 방문한 경우만 cycle 존재**
 
-![directed graph](https://user-images.githubusercontent.com/56071088/126054875-229806d9-f92b-4233-91a8-72af35683ecc.PNG)
+<img src="https://user-images.githubusercontent.com/56071088/126054875-229806d9-f92b-4233-91a8-72af35683ecc.PNG" height="400" width="300">
 
 ```c++
 vector<vector<int>> edges;

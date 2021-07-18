@@ -93,7 +93,7 @@ queue라이브러리를 사용하는 것이 좋으며, 데이터의 개수가 N�
 
 ## 활용
 
-### weight사 없는 graph에서의 최단거리
+### weight가 없는 graph에서의 최단거리
 
 Graph의 각 edge에 weight가 없을 때 (즉, 모든 edge가 동일한 weight를 가질 때)
 - BFS 알고리즘으로 간단하게 최단 경로를 찾을 수 있다.
