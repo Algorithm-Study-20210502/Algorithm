@@ -1,6 +1,6 @@
 # 그래프(Graph)의 기본 구조
 
-**`그래프(Graph)`** : **노드(Node)** 와 **간선(Edge)** 으로 표현되며, 이때 노드를 **정점(Vertex)**이라고도 말한다.
+**`그래프(Graph)`** : **노드(Node)** 와 **간선(Edge)** 으로 표현되며, 이때 노드를 **정점(Vertex)** 이라고도 말한다.
 
 **`그래프 탐색`** : 하나의 노드를 시작으로 다수의 노드를 방문하는 것을 말한다.
 
@@ -58,6 +58,27 @@ int main(void) {
 
 
 [인접 리스트 예제]
+
+```c++
+
+// 방법 1
+#define MAXN 100
+int N;
+vector<int> edges[MAXN];
+
+// 방법 2
+vector<vector<int>> edges;
+
+void addEdge(int u, int v) {
+    edges[u].push_back(v);
+    edges[v].push_back(u);
+}
+
+void addDirectedEdge(int u, int v) {
+    edges[u].push_back(v);
+}
+
+```
 
 ```c++
 #include <iostream>
