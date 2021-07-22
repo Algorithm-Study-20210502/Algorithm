@@ -50,7 +50,7 @@ int find(int x) {
     if(parent[x] != x) {
         return parent[x] = find(parent[x]);
     }
-    return x;
+    return parent[x];
 }
 
 void Union(int a, int b) {
@@ -130,7 +130,7 @@ int find(int x) {
     if(x != parent[x]) {
         return parent[x] = find(parent[x]);
     }
-    return x;
+    return parent[x];
 }
 
 // 두 원소가 속한 집합을 합치기
