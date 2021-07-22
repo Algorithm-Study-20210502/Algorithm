@@ -65,7 +65,7 @@ int find(int x) {
     if(x != parent[x]) {
         return parent[x] = find(parent[x]);
     }
-    return x;
+    return parent[x];
 }
 
 void Union(int a, int b) {
