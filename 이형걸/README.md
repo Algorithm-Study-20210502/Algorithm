@@ -11,12 +11,9 @@
 
 ### DFS/BFS
 
-- [그래프(graph)의 기본 구조](/이형걸/DFS,BFS/그래프(Graph)의%20기본%20구조.md)
-  - 노드(Node) 와 간선(Edge) 으로 표현되며, 이때 노드를 정점(Vertex) 이라고도 말한다. 
-- [DFS(Depth-First-Search)](/이형걸/DFS,BFS/DFS(Depth-First_Search).md)
-  - 깊이 우선 탐색, 그래프에서 깊은 부분을 우선적으로 탐색하는 알고리즘 
-- [BFS(Breadth-First-Search)](/이형걸/DFS,BFS/BFS(Breadth-First-Search).md)
-  - 넓이 우선 탐색, 가까운 노드부터 탐색하는 알고리즘 
+- [그래프(graph)의 기본 구조](/이형걸/DFS,BFS/그래프(Graph)의%20기본%20구조.md) : 노드(Node) 와 간선(Edge) 으로 표현되며, 이때 노드를 정점(Vertex) 이라고도 말한다. 
+- [DFS(Depth-First-Search)](/이형걸/DFS,BFS/DFS(Depth-First_Search).md) : 깊이 우선 탐색, 그래프에서 깊은 부분을 우선적으로 탐색하는 알고리즘 
+- [BFS(Breadth-First-Search)](/이형걸/DFS,BFS/BFS(Breadth-First-Search).md) : 넓이 우선 탐색, 가까운 노드부터 탐색하는 알고리즘 
 
 ### 정렬
 
