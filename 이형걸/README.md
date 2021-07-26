@@ -4,9 +4,15 @@
 
 ### 그리디
 
+- [그리디](/이형걸/그리디/그리디(Greedy).md)
+
 ### 구현
 
 ### DFS/BFS
+
+- [그래프(graph)의 기본 구조](/이형걸/DFS,BFS/그래프(Graph)의%20기본%20구조.md)
+- [DFS(Depth-First-Search)](/이형걸/DFS,BFS/DFS(Depth-First_Search).md)
+- [BFS(Breadth-First-Search)](/이형걸/DFS,BFS/BFS(Breadth-First-Search).md)
 
 ### 정렬
 
