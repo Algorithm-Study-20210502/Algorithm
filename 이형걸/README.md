@@ -4,15 +4,19 @@
 
 ### 그리디
 
-- [그리디](/이형걸/그리디/그리디(Greedy).md)
+- [그리디](/이형걸/그리디/그리디(Greedy).md) : 매 순간 가장 좋아 보이는 것을 선택하는 알고리즘
+  - 현재의 선택이 나중에 미칠 영향에 대해서는 고민하지 않는다.
 
 ### 구현
 
 ### DFS/BFS
 
 - [그래프(graph)의 기본 구조](/이형걸/DFS,BFS/그래프(Graph)의%20기본%20구조.md)
+  - 노드(Node) 와 간선(Edge) 으로 표현되며, 이때 노드를 정점(Vertex) 이라고도 말한다. 
 - [DFS(Depth-First-Search)](/이형걸/DFS,BFS/DFS(Depth-First_Search).md)
+  - 깊이 우선 탐색, 그래프에서 깊은 부분을 우선적으로 탐색하는 알고리즘 
 - [BFS(Breadth-First-Search)](/이형걸/DFS,BFS/BFS(Breadth-First-Search).md)
+  - 넓이 우선 탐색, 가까운 노드부터 탐색하는 알고리즘 
 
 ### 정렬
 
