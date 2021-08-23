@@ -1,5 +1,4 @@
 // 문자열(시간 (24:24:24) 빼기 계산)
-
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
