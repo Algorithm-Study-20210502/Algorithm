@@ -27,7 +27,7 @@ int main(){
             }
         }
         for(auto i=m.begin(); i!=m.end(); i++){ //가장 빈번하게 나타나는 문자가 여러개 인지 체크
-            if(i->second==max_cnt&&i->first!=max_char){
+            if(i->second==max_cnt&&i->first!=max_char){ //
                 cout<<'?'<<'\n';
                 flag=true;
                 break;
