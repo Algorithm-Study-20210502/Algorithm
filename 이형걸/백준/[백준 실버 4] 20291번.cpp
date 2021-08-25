@@ -39,7 +39,7 @@ int main() {
 	for (auto ext : Extensions) {
 		cout << ext.first << ' ' << ext.second << '\n';
 	}
-
+    
 	return 0;
 }
 
