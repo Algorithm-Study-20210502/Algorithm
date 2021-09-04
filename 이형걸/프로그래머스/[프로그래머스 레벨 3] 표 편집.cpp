@@ -100,11 +100,11 @@ string solution(int n, int k, vector<string> cmd) {
 using namespace std;
 
 set<int> Set;
-stack<int> Stack;
 
 string solution(int n, int k, vector<string> cmd) {
     string answer(n, 'X');
-    
+    stack<int> Stack;
+
     for(int i = 0; i < n; ++i) {
         Set.insert(i);
     }
