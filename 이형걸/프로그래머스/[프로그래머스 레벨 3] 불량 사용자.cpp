@@ -22,24 +22,27 @@ int solution(vector<string> user_id, vector<string> banned_id) {
     
     for (int i = 0; i < banned_id.size(); ++i) {
 		for (int j = 0; j < user_id.size(); ++j) {
-			if (banned_id[i].length() != user_id[j].length()) {
+            if (banned_id[i].length() != user_id[j].length()) {
                 continue;
             }
+
 			bool flag = true;
+
 			for (int k = 0; k < user_id[j].size(); ++k) {
 				if (banned_id[i][k] == '*') {
                     continue;
                 }
 				if (banned_id[i][k] != user_id[j][k]) {
-				    flag = false;
-				    break;
+                    flag = false;
+                    break;
                 }
-			}
+            }
+
 			if (flag) {
                 Candidates[i].push_back(j);
             }
 		}
-	}
+    }
     
     dfs(0, banned_id.size());
     
