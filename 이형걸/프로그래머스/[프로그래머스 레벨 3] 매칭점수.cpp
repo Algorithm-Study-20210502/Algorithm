@@ -58,7 +58,7 @@ int solution(string word, vector<string> pages) {
         }
                 
         Map[url] = i;
-        PageLists.push_back({i, basic, links, (double)basic});
+        PageLists.push_back({i, basic, links, (double) basic});
     }
     
     for(int i = 0; i < pages.size(); ++i) {
