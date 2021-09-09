@@ -1,4 +1,4 @@
-// 문자열, 구현 문제
+// 문자열, 구현, find(str, pos), for(int left=0,right=0; ; ) 문제
 
 #include <string>
 #include <vector>
