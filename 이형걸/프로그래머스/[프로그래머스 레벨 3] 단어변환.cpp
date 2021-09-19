@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <queue>
 
 #define INF 1e9
 
@@ -45,4 +46,43 @@ void dfs(string begin, string target, vector<string>& words, int count) {
             Visited[i] = false;
         }
     }
+}
+
+//-----------------bfs풀이-------------------//
+
+typedef pair<string, int> psi;
+
+int solution2(string begin, string target, vector<string> words) {
+    int answer = 0;
+    vector<bool> visited(words.size(), false);
+    queue<psi> q;
+    
+    q.push({begin, 0});
+    
+    while(!q.empty()) {
+        string cur = q.front().first;
+        int count = q.front().second;
+        q.pop();
+        
+        if(cur == target) {
+            answer = count;
+            break;
+        }
+        
+        for(int i = 0; i < words.size(); ++i) {
+            int cnt = 0;
+            for(int j = 0; j < words[i].length(); ++j) {
+                if(cur[j] != words[i][j]) {
+                    ++cnt;
+                }
+            }
+            
+            if(cnt == 1 && !visited[i]) {
+                visited[i] = true;
+                q.push({words[i], count + 1});
+            }
+        }
+    }
+    
+    return answer;
 }
