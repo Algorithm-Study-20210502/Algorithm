@@ -1,4 +1,4 @@
-// 별찍기, 구현, 재귀 문제
+// 별찍기, 구현, 재귀문제
 
 #include <iostream>
 #include <vector>
