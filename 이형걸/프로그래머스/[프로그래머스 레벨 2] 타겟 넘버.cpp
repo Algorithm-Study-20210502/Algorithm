@@ -18,7 +18,6 @@ void dfs(vector<int> numbers, int target, int sum, int index) {
         }
         return;
     }
-    
     dfs(numbers, target, sum + numbers[index], index+1);
     dfs(numbers, target, sum - numbers[index], index+1);
 }
