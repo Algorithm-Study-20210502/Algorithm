@@ -3,36 +3,41 @@
 
 using namespace std;
 
-int N, M, X, Y;
-// 북, 동, 남, 좌
-int dx[] = { -1,0,1,0 };
-int dy[] = { 0,1,0,-1 };
+typedef struct Node {
+	int x, y, num;
+}Node;
+
+int N;
+// 북, 동, 남, 서
+int Dx[] = { -1,0,1,0 };
+int Dy[] = { 0,1,0,-1 };
 vector<vector<int>> Arr;
+Node Target;
 
 void rotate();
 
 int main() {
-	cin >> N >> M;
-	
-	Arr.resize(N+1, vector<int>(N+1, 0));
+	cin >> N >> Target.num;
+
+	Arr.resize(N, vector<int>(N, 0));
 
 	rotate();
 
-	for (int i = 1; i <= N; ++i) {
-		for (int j = 1; j <= N; ++j) {
+	for (int i = 0; i < N; ++i) {
+		for (int j = 0; j < N; ++j) {
 			cout << Arr[i][j] << ' ';
 		}
 		cout << '\n';
 	}
 
-	cout << X << ' ' << Y << '\n';
+	cout << Target.x << ' ' << Target.y << '\n';
 
 	return 0;
 }
 
 void rotate() {
-	int x = N / 2 + 1, y = N / 2 + 1, cnt = 0, num = 0;
-	X = N / 2 + 1, Y = N / 2 + 1;
+	int x = N / 2, y = N / 2, cnt = 0, num = 0;
+	Target.x = x + 1, Target.y = y + 1;
 	Arr[x][y] = ++num;
 
 	while (true) {
@@ -41,26 +46,26 @@ void rotate() {
 				++cnt;
 			}
 			for (int j = 0; j < cnt; ++j) {
-				x += dx[i];
-				y += dy[i];
+				x += Dx[i];
+				y += Dy[i];
 
 				Arr[x][y] = ++num;
 
-				if (num == M) {
-					X = x, Y = y;
+				if (num == Target.num) {
+					Target.x = x+1;
+					Target.y = y+1;
 				}
-				if (x == 1 && y == 1) {
+
+				if (x == 0 && y == 0) {
 					break;
 				}
 			}
-			if (x == 1 && y == 1) {
+			if (x == 0 && y == 0) {
 				break;
 			}
 		}
-		if (x == 1 && y == 1) {
+		if (x == 0 && y == 0) {
 			break;
 		}
 	}
-
-	return;
 }
